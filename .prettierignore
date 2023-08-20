@@ -1,0 +1,10 @@
+# Base
+.next/
+.turbo/
+.next/
+dist/
+node_modules/
+.gitignore
+.husky/
+.vscode/
+yarn.lock
