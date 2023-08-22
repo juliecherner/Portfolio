@@ -15,26 +15,26 @@ const topics = [
 export default function About() {
   return (
     <div id={TABS.ABOUT} className="pt-28 flex flex-row gap-12 text-justify">
-      <div className="h-250 w-auto">
+      <div className="h-full">
         <Image
           src="/images/personal-photo.jpg"
           alt="Photo"
           style={borderStyle}
           priority={true}
-          height={270}
-          width={250}
+          height={0}
+          width={320}
         />
       </div>
       <div className="flex flex-col gap-8">
         <div>
           <div className="text-primaryGreen font-bold">
-            I am delighted to introduce my personal website featuring my
-            portfolio.
+            My name is Julie Cherner and I am a Full Stack Engineer.
           </div>
           <div>
-            This digital platform encapsulates my growth and achievements as a
-            Full Stack Engineer. Through my experience and projects, you will
-            witness my dedication to mastering the art of web development.
+            My pleasure is to introduce my personal website featuring my
+            portfolio. This digital platform encapsulates my interests, growth
+            and achievements. Through this experience, you will witness my
+            dedication to mastering the art of web development.
           </div>
         </div>
         <div>
