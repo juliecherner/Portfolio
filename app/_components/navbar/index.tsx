@@ -1,15 +1,12 @@
-const barsList = ['About me', 'Skills', 'Action', 'Contact']
+const barsList = ['About', 'Skills', 'Action', 'Contact']
 export default function Navbar() {
   return (
-    <main>
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        Julie navbar
-      </div>
-      <div>
+    <div className="text-primaryGreen font-bold">
+      <div className="flex flex-row align-between gap-24">
         {barsList.map((barItem) => (
           <div key={barItem}>{barItem}</div>
         ))}
       </div>
-    </main>
+    </div>
   )
 }

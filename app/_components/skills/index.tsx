@@ -24,7 +24,7 @@ export default async function Skills() {
   ])
 
   return (
-    <main>
+    <div className="flex flex-col items-center justify-between">
       <div>Work experience</div>
       <div>Skills</div>
       <div>Project types: description - technologies</div>
@@ -35,6 +35,6 @@ export default async function Skills() {
           <div key={projects.id}>{projects.name}</div>
         ))} */}
       </div>
-    </main>
+    </div>
   )
 }
