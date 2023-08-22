@@ -1,3 +1,5 @@
+import { TABS } from '../navbar/constants'
+
 const envCacheStrategy = process.env.envCacheStrategy as RequestCache
 
 async function getArticles() {
@@ -24,16 +26,25 @@ export default async function Skills() {
   ])
 
   return (
-    <div className="flex flex-col items-center justify-between">
-      <div>Work experience</div>
-      <div>Skills</div>
-      <div>Project types: description - technologies</div>
-      <div>
-        {JSON.stringify(articles)}
-        {JSON.stringify(projects)}
-        {/* {projects.map((project: any) => (
+    <div className="flex flex-col">
+      <div id={TABS.SKILLS}>
+        <p>Skills</p>
+      </div>
+
+      <div id={TABS.EXPERIENCE}>
+        <p>Experience</p>
+        <div>Project types: description - technologies</div>
+        <div>
+          {JSON.stringify(projects)}
+          {/* {projects.map((project: any) => (
           <div key={projects.id}>{projects.name}</div>
         ))} */}
+        </div>
+      </div>
+
+      <div>
+        <p>Articles</p>
+        <div> {JSON.stringify(articles)}</div>
       </div>
     </div>
   )

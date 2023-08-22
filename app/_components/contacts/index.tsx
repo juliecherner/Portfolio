@@ -1,9 +1,10 @@
 import Image from 'next/image'
+import { TABS } from '../navbar/constants'
 
 export default function Contacts() {
   return (
     <main>
-      <div>Links</div>
+      <div id={TABS.CONTACTS}>Links</div>
       <div>
         <a href="https://wa.me/972533903033" target="_blank">
           <Image

@@ -8,7 +8,7 @@ const NoSSRSkills = dynamic(() => import('@/components/skills'), { ssr: false })
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen items-center justify-between p-12">
+    <main className="flex flex-col min-h-screen items-center justify-between px-12">
       <Navbar />
       <About />
       <NoSSRSkills />
