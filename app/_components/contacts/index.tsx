@@ -1,20 +1,30 @@
 import Image from 'next/image'
 import { TABS } from '../navbar/constants'
+import { contactIcons } from './constants'
 
 export default function Contacts() {
   return (
-    <main>
-      <div id={TABS.CONTACTS}>Links</div>
-      <div>
-        <a href="https://wa.me/972533903033" target="_blank">
-          <Image
-            src="/images/WhatsApp-Digital_Stacked_Green.png"
-            width={50}
-            height={50}
-            alt="Whatsapp"
-          />
-        </a>
+    <div className="flex flex-col gap-8 py-8">
+      <div className="flex flex-col justify-center items-center">
+        <div id={TABS.CONTACTS} className="font-bold">
+          Let's be in touch!
+        </div>
+        <div>e-mail: juliechernen@gmail.com</div>
       </div>
-    </main>
+      <div className="flex flex-row items-between justify-bottom items-bottom gap-12">
+        {contactIcons.map((icon) => (
+          <div key={icon.altName} className="m-auto">
+            <a href={icon.url} target="_blank">
+              <Image
+                src={icon.relativePath}
+                width={icon.width}
+                height={icon.height}
+                alt={icon.altName}
+              />
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }
