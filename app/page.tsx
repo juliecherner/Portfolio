@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic'
 import Navbar from '@/components/navbar'
 import About from '@/components/about'
 import Contacts from '@/components/contacts'
-import Action from '@/components/action'
+import Animation from '@/components/animation'
 
 const NoSSRSkills = dynamic(() => import('@/components/skills'), { ssr: false })
 
@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar />
       <About />
       <NoSSRSkills />
-      <Action />
+      <Animation />
       <Contacts />
     </main>
   )

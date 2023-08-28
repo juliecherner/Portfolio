@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import ShowButton from './showButton'
 import { TABS } from '../navbar/constants'
 import { contactIcons } from './constants'
 
@@ -9,7 +10,7 @@ export default function Contacts() {
         <div id={TABS.CONTACTS} className="font-bold">
           Let's be in touch!
         </div>
-        <div>e-mail: juliechernen@gmail.com</div>
+        <ShowButton />
       </div>
       <div className="flex flex-row items-between justify-bottom items-bottom gap-12">
         {contactIcons.map((icon) => (

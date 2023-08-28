@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700|Roboto:900|Russo+One');
+
+.node-icon {
+  animation: top-icon 5s linear infinite;
+}
+
+#animation-letters {
+  height: 200px;
+}
+
+@function makelongshadow($color) {
+  $val: 0px 0px $color;
+  @for $i from 1 through 100 {
+    $val:
+      #{$val},
+      #{$i}px #{$i}px #{$color};
+  }
+  @return $val;
+}
+
+$color: #aeb;
+
+#animation-letter {
+  width: 60px;
+  display: inline-block;
+  font-size: 0px;
+  font-family: 'Russo One';
+  font-weight: 900;
+  color: #fff;
+}
+
+@for $i from 1 to 10 {
+  #animation-letter:nth-child(#{$i}) {
+    text-shadow: makelongshadow(adjust-hue($color, $i * 30));
+    animation: showup 5s infinite $i * 0.2s;
+  }
+}
+
+@keyframes showup {
+  0% {
+    font-size: 0px;
+    transform: rotate(90deg);
+  }
+  5% {
+    font-size: 60px;
+  }
+  10% {
+    font-size: 66px;
+    transform: rotate(0deg);
+  }
+  60% {
+    font-size: 66px;
+    opacity: 1;
+  }
+  71% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    font-size: 66px;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes top-icon {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+    font-size: 42px;
+  }
+  40% {
+    opacity: 1;
+    font-size: 42px;
+  }
+  70% {
+    opacity: 1;
+    font-size: 42px;
+  }
+  80% {
+    opacity: 0;
+    font-size: 30px;
+  }
+  100% {
+    opacity: 0;
+  }
+}
