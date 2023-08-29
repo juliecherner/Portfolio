@@ -7,8 +7,8 @@ export default function Animation() {
       <div className="node-icon">
         <Image
           src="/images/icons8-nodejs-48.png"
-          width={100}
-          height={100}
+          width={50}
+          height={50}
           alt="⎔"
         />
       </div>
