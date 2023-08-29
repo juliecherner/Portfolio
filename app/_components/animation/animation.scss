@@ -29,7 +29,7 @@ $color: #aeb;
   color: #fff;
 }
 
-@for $i from 1 to 10 {
+@for $i from 1 to 12 {
   #animation-letter:nth-child(#{$i}) {
     text-shadow: makelongshadow(adjust-hue($color, $i * 30));
     animation: showup 5s infinite $i * 0.2s;
