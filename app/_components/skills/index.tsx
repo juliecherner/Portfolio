@@ -1,3 +1,4 @@
+import GeneralSkills from './general'
 import { TABS } from '../navbar/constants'
 
 const envCacheStrategy = process.env.envCacheStrategy as RequestCache
@@ -26,10 +27,8 @@ export default async function Skills() {
   ])
 
   return (
-    <div className="flex flex-col">
-      <div id={TABS.SKILLS}>
-        <p>Skills</p>
-      </div>
+    <div className="flex flex-col w-full p-16">
+      <GeneralSkills />
 
       <div id={TABS.EXPERIENCE}>
         <p>Experience</p>
