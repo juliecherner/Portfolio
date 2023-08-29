@@ -22,7 +22,9 @@ export default function SkillsColumn({ skills }: SkillColumnProps) {
         <div>
           {(skills?.data as Skill[]).map((item: Skill) => (
             <div key={item.title}>
-              <p className="text-primaryGreen font-bold py-1">{item.title}</p>
+              {item?.title && (
+                <p className="text-primaryGreen font-bold py-1">{item.title}</p>
+              )}
               {(item.data as string[]).map((dataItem: string) => (
                 <div key={dataItem}>{dataItem}</div>
               ))}
