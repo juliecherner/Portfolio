@@ -4,14 +4,16 @@ import About from '@/components/about'
 import Contacts from '@/components/contacts'
 import Animation from '@/components/animation'
 
-const NoSSRSkills = dynamic(() => import('@/components/skills'), { ssr: false })
+const NoSSRExperience = dynamic(() => import('@/components/experience'), {
+  ssr: false,
+})
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen items-center justify-between px-12">
       <Navbar />
       <About />
-      <NoSSRSkills />
+      <NoSSRExperience />
       <Animation />
       <Contacts />
     </main>
