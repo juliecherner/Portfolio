@@ -3,7 +3,7 @@ import { Skill } from '@/types/skills'
 export const stack: Skill[] = [
   {
     title: 'Languages',
-    data: ['Javascript', 'Typescript', 'Java'],
+    data: ['Javascript', 'Typescript'],
   },
 
   {
@@ -17,13 +17,14 @@ export const stack: Skill[] = [
   },
   {
     title: 'Backend',
-    data: ['Node', 'Express', 'Nest.js', 'Spring Boot'],
+    data: ['Node', 'Express', 'Nest.js'],
   },
   {
     title: 'Databases',
     data: [
-      { title: 'NoSQL', data: ['MongoDB', 'Redis'] },
+      { title: 'NoSQL', data: ['MongoDB', 'Redis', 'Firebase'] },
       { title: 'SQL', data: ['PostgreSQL', 'AWS Redshift'] },
+      { title: 'Bucket', data: ['AWS S3', 'Firebase Storage'] },
     ],
   },
 

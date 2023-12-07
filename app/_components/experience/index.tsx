@@ -21,14 +21,14 @@ async function getProjects() {
 }
 
 export default async function Experience() {
-  const articlesPromise = getArticles()
+    const articlesPromise = getArticles()
   const projectsPromise = getProjects()
 
   const [articles, projects] = await Promise.all([
     articlesPromise,
     projectsPromise,
   ])
-
+  
   return (
     <div className="flex flex-col w-full">
       <div id={TABS.EXPERIENCE}>
@@ -41,7 +41,7 @@ export default async function Experience() {
           </div>
         </div>
         <div>
-          <p className="py-8 font-bold text-primaryGreen">Github Projects</p>
+                <p className="py-8 font-bold text-primaryGreen">Github Projects</p>
           <div className="grid grid-cols-2 gap-4">
             {projects.map((project: ProjectType) => (
               <Project key={project.id} project={project} />
