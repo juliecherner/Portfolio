@@ -9,7 +9,7 @@ export default function GeneralSkills() {
       <p className="font-bold">
         Skilled and experienced with following technologies:
       </p>
-      <div className="grid grid-cols-4 gap-2 pt-4">
+      <div className="flex justify-center flex-wrap gap-12 pt-4">
         {stack.map((skillGroup: Skill) => (
           <SkillsColumn key={skillGroup.title} skills={skillGroup} />
         ))}
