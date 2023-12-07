@@ -1,6 +1,7 @@
 import { TABS } from '../navbar/constants'
 import Project from './project'
 import Article from './article'
+import Employment from "./employment"
 import { Project as ProjectType } from '@/types/project'
 import { Article as ArticleType } from '@/types/article'
 
@@ -21,17 +22,21 @@ async function getProjects() {
 }
 
 export default async function Experience() {
-    const articlesPromise = getArticles()
+  const articlesPromise = getArticles()
   const projectsPromise = getProjects()
 
   const [articles, projects] = await Promise.all([
     articlesPromise,
     projectsPromise,
   ])
-  
+
   return (
     <div className="flex flex-col w-full">
       <div id={TABS.EXPERIENCE}>
+        <div>
+          <p className="py-8 font-bold text-primaryGreen">Career</p>
+          <Employment />
+        </div>
         <div>
           <p className="py-8 font-bold text-primaryGreen">Articles</p>
           <div className="grid grid-cols-2 gap-4">
@@ -41,7 +46,7 @@ export default async function Experience() {
           </div>
         </div>
         <div>
-                <p className="py-8 font-bold text-primaryGreen">Github Projects</p>
+          <p className="py-8 font-bold text-primaryGreen">Github Projects</p>
           <div className="grid grid-cols-2 gap-4">
             {projects.map((project: ProjectType) => (
               <Project key={project.id} project={project} />

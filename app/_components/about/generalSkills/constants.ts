@@ -38,7 +38,7 @@ export const stack: Skill[] = [
       },
       {
         title: 'Cloud',
-        data: ['AWS'],
+        data: ['AWS E2C'],
       },
     ],
   },
