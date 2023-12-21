@@ -6,7 +6,7 @@ type ProjectProps = {
 }
 export default function Project({ project }: ProjectProps) {
   return (
-    <div className="flex flex-col gap-1 border border-2 border-primaryGreen p-2 rounded mb-2">
+    <div className="flex flex-col gap-1 border border-2 border-primaryGreen p-2 rounded mb-2 overflow-hidden">
       <p>Name: {project.name}</p>
       <p>Description: {project.description}</p>
       <p>Language: {project.language}</p>

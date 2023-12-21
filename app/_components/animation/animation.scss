@@ -5,7 +5,7 @@
 }
 
 #animation-letters {
-  height: 200px;
+  height: 250px;
 }
 
 @function makelongshadow($color) {
@@ -19,6 +19,12 @@
 }
 
 $color: #aeb;
+
+@media (max-width: 640px) {
+  #animation-letters{
+    display: none;
+  }
+}
 
 #animation-letter {
   width: 60px;

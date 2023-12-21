@@ -4,7 +4,7 @@ import { employment } from './constants'
 export default function Employment() {
     return (
         <div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 {employment.map((job: EmploymentType) => (
                     <div key={job.company}>
                         <a href={job.url} target="_blank">
