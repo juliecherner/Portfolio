@@ -11,7 +11,7 @@ const topics = ['Full Stack', 'Web development', 'CI/CD', 'Latest technologies']
 export default function About() {
   return (
     <div>
-      <div id={TABS.ABOUT} className="pt-28 flex flex-row gap-12 text-justify">
+      <div id={TABS.ABOUT} className="pt-28 pb-12 px-12 flex flex-col items-center gap-12 text-justify md:flex-row">
         <div className="h-full">
           <Image
             src="/images/personal-photo.jpg"
