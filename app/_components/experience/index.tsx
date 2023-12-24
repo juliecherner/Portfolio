@@ -39,7 +39,7 @@ export default async function Experience() {
         </div>
         <div>
           <p className="py-8 font-bold text-primaryGreen">Articles</p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {articles.map((article: ArticleType) => (
               <Article key={article.id} article={article} />
             ))}
