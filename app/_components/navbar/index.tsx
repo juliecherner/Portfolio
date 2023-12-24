@@ -14,12 +14,14 @@ const barsList = [
 
 export default function Navbar() {
   return (
-    <nav className="w-full fixed flex flex-wrap md:justify-between gap-2 px-12 md:px-24 pt-12 pb-6 text-primaryGreen font-bold bg-white text-lg">
+    <nav className="w-full fixed px-12 md:px-24 pt-12 pb-6 text-primaryGreen font-bold bg-white text-lg">
+      <div className="block md:hidden">Julie Cherner, Full Stack Engineer</div>
+      <div className="hidden md:flex md:flex-wrap md:justify-between md:gap-2">
         {barsList.map((barItem) => (
           <a href={barItem.anchorId} key={barItem.id}>
             {barItem.text}
           </a>
-        ))}
+        ))}</div>
     </nav>
   )
 }
