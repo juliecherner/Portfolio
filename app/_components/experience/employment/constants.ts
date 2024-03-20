@@ -2,8 +2,8 @@ import { Employment as EmploymentType } from '@/types/employment'
 
 export const employment: EmploymentType[] = [
   {
-    company: 'FrrCode',
-    url: 'https://frrcode.com',
+    company: 'Freelance',
+    url: '',
     sphere: 'Software Services',
     period: '2023-present',
     position: 'Full Stack Engineer',
@@ -50,7 +50,7 @@ export const employment: EmploymentType[] = [
   {
     company: 'AGNN',
     url: 'https://agnn.by',
-    sphere: 'Legal and Tourism Services',
+    sphere: 'Legal services',
     period: '2021',
     position: 'Frontend Developer',
     responsibilities: [

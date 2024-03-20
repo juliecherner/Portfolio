@@ -6,17 +6,18 @@ type ProjectProps = {
 }
 export default function Project({ project }: ProjectProps) {
   return (
-    <div className="flex flex-col gap-1 border border-2 border-primaryGreen p-2 rounded mb-2 overflow-hidden">
-      <p>Name: {project.name}</p>
-      <p>Description: {project.description}</p>
+    <div className="flex flex-col justify-center items-center gap-1 border border-2 border-primaryGreen p-2 rounded mb-2 overflow-hidden p-2 lg:px-2">
+      <p className="font-bold underline">{project.name}</p>
+      <p className="text-primaryGreen font-bold">
+        {project.description}
+      </p>
       <p>Language: {project.language}</p>
       <p>Last updated: {formatDate(project.updated_at)}</p>
       <p>Stars: {project.stargazers_count}</p>
       <div className="flex flex-col gap-1">
-        <p>Technologies</p>
 
         {project.topics.length > 0 ? (
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap justify-center gap-1">
             {project.topics.map((topic: string) => (
               <div
                 key={topic}
@@ -27,7 +28,9 @@ export default function Project({ project }: ProjectProps) {
             ))}
           </div>
         ) : (
-          'Technologies are not specified'
+          <p className="text-primaryGreen font-bold">
+            Technologies are not specified
+          </p>
         )}
       </div>
       <div>
