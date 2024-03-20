@@ -11,7 +11,7 @@ const topics = ['Full Stack', 'Web development', 'CI/CD', 'Latest technologies']
 export default function About() {
   return (
     <div>
-      <div id={TABS.ABOUT} className="pt-28 pb-12 px-12 flex flex-col items-center gap-12 text-justify md:flex-row">
+      <div id={TABS.ABOUT} className="pt-36 md:pt-28 pb-12 px-4 flex flex-col items-center gap-12 text-justify md:flex-row">
         <div className="h-full">
           <Image
             src="/images/personal-photo.jpg"
@@ -22,7 +22,7 @@ export default function About() {
             width={320}
           />
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col justify-center gap-8">
           <div>
             <div className="text-primaryGreen font-bold">
               My name is Julie Cherner and I am a Full Stack Engineer.
@@ -34,7 +34,7 @@ export default function About() {
               dedication to mastering the art of web development.
             </div>
           </div>
-          <div>
+          <div className="">
             <div className="text-primaryGreen font-bold">
               Coding, to me, is the ultimate fusion of creativity and logic.
             </div>
@@ -42,11 +42,12 @@ export default function About() {
             challenges and crafting elegant solutions.
           </div>
           <div>
-            <div className="pb-2">Speak with me about:</div>
-            <div className="flex flex-row gap-2">
+            <div>Speak with me about:</div>
+            <div className="flex flex-col md:flex-row gap-4 md:gap-2">
+           
               {topics.map((topic: string) => (
                 <div
-                  className="bg-primaryGreen hover:bg-green-600 text-white font-bold py-1 px-2 rounded"
+                  className="inline-block bg-primaryGreen hover:bg-green-600 text-white font-bold py-1 px-2 rounded"
                   key={topic}
                 >
                   {topic}

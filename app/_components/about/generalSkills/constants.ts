@@ -31,14 +31,14 @@ export const stack: Skill[] = [
   {
     title: 'DevOps',
     data: [
-      { title: 'Containers', data: ['Docker', 'Kubernetes'] },
+      { title: 'Containers', data: ['Docker', "Docker Swarm", 'Kubernetes'] },
       {
         title: 'CI/CD',
         data: ['Github Actions', 'Circle CI', 'Codefresh'],
       },
       {
         title: 'Cloud',
-        data: ['AWS E2C'],
+        data: ['AWS E2C', 'GCP'],
       },
     ],
   },
