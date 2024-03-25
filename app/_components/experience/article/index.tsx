@@ -6,7 +6,7 @@ type ArticleProps = {
 export default function Article({ article }: ArticleProps) {
   return (
     <div className="flex flex-col gap-1 lg:gap-4 overflow-hidden bg-opacity-70 p-2 rounded mb-2">
-      <div className="flex flex-col md:flex-row items-center md:justify-between gap-2 bg-primaryGreen opacity-60 font-bold text-white px-4 py-2 rounded">
+      <div className="flex flex-col md:flex-row items-center md:justify-between gap-2 bg-mildGreen text-gray-800 font-bold px-4 py-2 rounded">
         <p>
           {article.title}
         </p>
