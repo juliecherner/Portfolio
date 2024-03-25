@@ -1,4 +1,7 @@
+"use client"
 import { TABS } from './constants'
+import { motion, useScroll } from "framer-motion"
+import "../../globals.css"
 
 const barsList = [
   {
@@ -13,8 +16,14 @@ const barsList = [
 ]
 
 export default function Navbar() {
+  const { scrollYProgress } = useScroll();
+
   return (
     <nav className="w-full fixed px-12 md:px-24 lg:px-64  py-8 lg:py-12 text-primaryGreen font-bold bg-white">
+       <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
       <div className="block md:hidden">Julie Cherner, Full Stack Engineer</div>
       <div className="hidden md:flex md:flex-wrap md:justify-between md:gap-2">
         {barsList.map((barItem) => (

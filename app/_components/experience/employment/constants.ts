@@ -8,14 +8,12 @@ export const employment: EmploymentType[] = [
     period: '2023-present',
     position: 'Full Stack Engineer',
     responsibilities: [
-      'Backend development with Node, Nest.js and MongoDB',
-
-      'Creating CI/CD pipelines with GitHub Actions',
-      'Dockerizing of Monolith apps',
-      'Developing functionality for Angular project, using RxJS',
-      'Applied Figma layouts with SASS',
-      'Creating Next.js project, using MUI and Tailwind CSS',
-      'Writing unit, API, E2E tests with Jest, Cypress',
+      'Developing e-service backend with Node (Nest.js), Firebase, Postgres and PrismaORM, adding features to React.js project (+ React Query and Zustand)',
+      'Creating e-commerce project with Next.js: React metaframework and Node (Nest.js), MongoDB, deployed on GCP',
+      'Integrating with 3rd party APIs',
+      'Used Docker and Docker Swarm, building CI/CD with Github Actions',
+      'Writing unit and E2E tests with Jest and Cypress',
+      'Pixel-perfect Figma layouts with SASS implementation',
     ],
   },
   {
@@ -25,14 +23,11 @@ export const employment: EmploymentType[] = [
     period: '2022-2023',
     position: 'Full Stack Engineer',
     responsibilities: [
-      'Developed features for React project, managed global state with Redux Toolkit, used MUI',
-      'Added functionality to Angular project, used RxJs, component library Angular Material,',
-      'Implemented pixel-perfect UI with SASS',
-      'Developed monolith with Nest.js',
-      'Added functionality to Express.js microservices',
-      'Worked with NoSQL and SQL databases: MongoDB, Redis, AWS Redshift',
-      'Used CI/CD tool Codefresh, deployed on AWS',
-      'Dockerized applications, provide basic Kubernetes administration with Helm',
+      'Developed backend with Node.js monolith with Nest.js, microservices with Express.js',
+      'Worked with NoSQL (MongoDB, Redis) and SQL (AWS Redshift) databases, AWS S3 bucket',
+      'Developed features for React.js project (+ Redux Toolkit, MUI)',
+      'Added functionality to Angular project (+ RxJs, Angular Material)',
+      'Used Codefresh (CI/CD), Dockerized apps, deployed on AWS E2C',
     ],
   },
   {
@@ -55,8 +50,7 @@ export const employment: EmploymentType[] = [
     position: 'Frontend Developer',
     responsibilities: [
       'Developed features for Angular projects, managed observables with RxJS',
-      'Used UI component library Angular Material',
-      'Designed and implemented responsive UI with SASS, CSS',
+      'Used UI component library Angular Material, designed and implemented responsive UI with SASS, CSS',
     ],
-  }
+  },
 ]

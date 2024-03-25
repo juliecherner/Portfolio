@@ -3,15 +3,23 @@ import { TABS } from '../navbar/constants'
 import GeneralSkills from './generalSkills/index'
 
 const borderStyle = {
-  borderRadius: '15px',
-} as Record<string, string>
+
+    borderRadius: '15px',
+
+
+
+
+} as Record<string, any>
 
 const topics = ['Full Stack', 'Web development', 'CI/CD', 'Latest technologies']
 
 export default function About() {
   return (
     <div>
-      <div id={TABS.ABOUT} className="pt-28 md:pt-36 xl:pt-44 pb-12 px-4 flex flex-col  md:grid md:grid-cols-12 items-center gap-12 text-justify md:flex-row">
+      <div
+        id={TABS.ABOUT}
+        className="pt-28 md:pt-36 xl:pt-44 pb-12 px-4 flex flex-col  md:grid md:grid-cols-12 items-center gap-12 text-justify md:flex-row"
+      >
         <div className="h-full md:col-span-4 lg:col-span-3">
           <Image
             src="/images/personal-photo.jpg"
@@ -58,6 +66,17 @@ export default function About() {
         </div>
       </div>
       <GeneralSkills />
+      <div className="flex flex-col bg-gray-100 border border-gray-300 rounded-lg p-4 backdrop-blur-lg">
+        <div className="flex justify-center">
+          <Image
+            src="/images/green-tree.png"
+            alt="Generated with Gencraft"
+            height={0}
+            width={500}
+          />
+        </div>
+        <p className="text-sm text-center">*Generated with Gencraft</p>
+      </div>
     </div>
   )
 }
