@@ -12,9 +12,12 @@ export default function Contacts() {
         </div>
         <ShowButton />
       </div>
-      <div className="flex flex-row items-between justify-bottom items-bottom gap-12">
+      <div className="grid grid-cols-2 lg:flex lg:flex-row items-between justify-bottom items-bottom gap-12 py-24">
         {contactIcons.map((icon) => (
-          <div key={icon.altName} className="m-auto">
+          <div
+            key={icon.altName}
+            className="flex items-center justify-center block"
+          >
             <a href={icon.url} target="_blank">
               <Image
                 src={icon.relativePath}

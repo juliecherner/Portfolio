@@ -3,8 +3,8 @@ import './animation.scss'
 
 export default function Animation() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="node-icon">
+    <div className="flex flex-col items-center justify-center gap-24 mt-12 lg:mt-24">
+      <div className="node-icon sm:block lg:hidden">
         <Image
           src="/images/icons8-nodejs-48.png"
           width={50}
