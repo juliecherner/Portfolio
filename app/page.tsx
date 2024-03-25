@@ -10,7 +10,7 @@ const NoSSRExperience = dynamic(() => import('@/components/experience'), {
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen items-center justify-between px-12 md:px-16 lg:px-24 xl:px-44">
+    <main className="flex flex-col min-h-screen items-center justify-between px-12 md:px-16 lg:px-24 xl:px-44 md:text-lg lg:text-xl xl:text-2xl lg:leading-relaxed">
       <Navbar />
       <About />
       <NoSSRExperience />

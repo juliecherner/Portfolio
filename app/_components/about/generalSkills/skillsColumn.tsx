@@ -7,8 +7,8 @@ export default function SkillsColumn({ skills }: SkillColumnProps) {
     (item: Skill) => typeof item === 'string'
   )
   return (
-    <div className="py-2">
-      <p className="inline-block bg-primaryGreen hover:bg-green-600 text-white font-bold py-1 px-2 rounded mb-2">
+    <div className="py-2 flex flex-col ">
+      <p className="bg-primaryGreen hover:bg-green-600 text-white font-bold py-1 px-2 rounded mb-2">
         {skills?.title}
       </p>
 

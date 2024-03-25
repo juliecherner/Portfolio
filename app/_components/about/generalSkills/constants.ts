@@ -3,7 +3,7 @@ import { Skill } from '@/types/skills'
 export const stack: Skill[] = [
   {
     title: 'Languages',
-    data: ['Javascript', 'Typescript'],
+    data: ['Typescript/Javascript', 'Python'],
   },
 
   {
@@ -17,7 +17,16 @@ export const stack: Skill[] = [
   },
   {
     title: 'Backend',
-    data: ['Node', 'Express', 'Nest.js'],
+    data: [
+      {
+        title: 'Node.js',
+        data: ['Express', 'Nest.js'],
+      },
+      {
+        title: 'Django',
+        data: [],
+      },
+    ],
   },
   {
     title: 'Databases',
@@ -31,7 +40,7 @@ export const stack: Skill[] = [
   {
     title: 'DevOps',
     data: [
-      { title: 'Containers', data: ['Docker', "Docker Swarm", 'Kubernetes'] },
+      { title: 'Containers', data: ['Docker', 'Docker Swarm', 'Kubernetes'] },
       {
         title: 'CI/CD',
         data: ['Github Actions', 'Circle CI', 'Codefresh'],
