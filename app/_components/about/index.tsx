@@ -11,7 +11,7 @@ const topics = ['Full Stack', 'Web development', 'CI/CD', 'Latest technologies']
 export default function About() {
   return (
     <div>
-      <div id={TABS.ABOUT} className="pt-36 md:pt-28 pb-12 px-4 flex flex-col items-center gap-12 text-justify md:flex-row">
+      <div id={TABS.ABOUT} className="pt-28 md:pt-36 xl:pt-44 pb-12 px-4 flex flex-col items-center gap-12 text-justify md:flex-row">
         <div className="h-full">
           <Image
             src="/images/personal-photo.jpg"
@@ -42,8 +42,8 @@ export default function About() {
             challenges and crafting elegant solutions.
           </div>
           <div>
-            <div>Speak with me about:</div>
-            <div className="flex flex-col md:flex-row gap-4 md:gap-2">
+            <div className="mb-2 lg:mb-4">Speak with me about:</div>
+            <div className="flex flex-col md:flex-row gap-2 lg:gap-4">
            
               {topics.map((topic: string) => (
                 <div
