@@ -33,11 +33,11 @@ export default async function Experience() {
   return (
     <div className="flex flex-col w-full">
       <div id={TABS.EXPERIENCE}>
-        <div>
+        <div className="pt-24">
           <p className="py-8 font-bold text-primaryGreen">Career</p>
           <Employment />
         </div>
-        <div>
+        <div className="pt-24">
           <p className="py-8 font-bold text-primaryGreen">Articles</p>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {articles.map((article: ArticleType) => (
@@ -45,7 +45,7 @@ export default async function Experience() {
             ))}
           </div>
         </div>
-        <div>
+        <div className="pt-24">
           <p className="py-8 font-bold text-primaryGreen">Github Projects</p>
           <div className="grid grid-cols-2 gap-4">
             {projects.map((project: ProjectType) => (

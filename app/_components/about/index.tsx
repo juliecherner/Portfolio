@@ -11,8 +11,8 @@ const topics = ['Full Stack', 'Web development', 'CI/CD', 'Latest technologies']
 export default function About() {
   return (
     <div>
-      <div id={TABS.ABOUT} className="pt-28 md:pt-36 xl:pt-44 pb-12 px-4 flex flex-col items-center gap-12 text-justify md:flex-row">
-        <div className="h-full">
+      <div id={TABS.ABOUT} className="pt-28 md:pt-36 xl:pt-44 pb-12 px-4 flex flex-col  md:grid md:grid-cols-12 items-center gap-12 text-justify md:flex-row">
+        <div className="h-full md:col-span-4 lg:col-span-3">
           <Image
             src="/images/personal-photo.jpg"
             alt="Photo"
@@ -22,7 +22,7 @@ export default function About() {
             width={320}
           />
         </div>
-        <div className="flex flex-col justify-center gap-8">
+        <div className="flex flex-col justify-center gap-8 md:col-span-8 lg:col-span-9">
           <div>
             <div className="text-primaryGreen font-bold">
               My name is Julie Cherner and I am a Full Stack Engineer.
