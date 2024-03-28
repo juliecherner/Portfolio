@@ -3,12 +3,7 @@ import { TABS } from '../navbar/constants'
 import GeneralSkills from './generalSkills/index'
 
 const borderStyle = {
-
-    borderRadius: '15px',
-
-
-
-
+  borderRadius: '15px',
 } as Record<string, any>
 
 const topics = ['Full Stack', 'Web development', 'CI/CD', 'Latest technologies']
@@ -52,7 +47,6 @@ export default function About() {
           <div>
             <div className="mb-2 lg:mb-4">Speak with me about:</div>
             <div className="flex flex-col md:flex-row gap-2 lg:gap-4">
-           
               {topics.map((topic: string) => (
                 <div
                   className="inline-block bg-primaryGreen hover:bg-green-600 text-white font-bold py-1 px-2 rounded"
@@ -62,6 +56,18 @@ export default function About() {
                 </div>
               ))}
             </div>
+          </div>
+          <div>
+            <p className="mb-4 font-bold text-primaryGreen">
+              A summary of my professional experience is presented in CV.
+            </p>
+            <a
+            className="border border-4 border-primaryGreen rounded py-1 px-4"
+              href="https://drive.google.com/file/d/1yjI3BzF29UmZJ7Rx5OmHs5zZqkucvAI9/view?usp=sharing"
+              target="_blank"
+            >
+              Open CV
+            </a>
           </div>
         </div>
       </div>
